@@ -22,7 +22,7 @@ function satoshitrim($satoshitrim) {
    return rtrim(rtrim($satoshitrim, "0"), ".");
 }
 
-$server_url = "/";  // ENTER WEBSITE URL ALONG WITH A TRAILING SLASH
+$server_url = "http://54.156.173.214/";  // ENTER WEBSITE URL ALONG WITH A TRAILING SLASH
 
 $db_host = "localhost";
 $db_user = "root";
@@ -30,18 +30,18 @@ $db_pass = "password";
 $db_name = "wallet";
 
 $rpc_host = "127.0.0.1";
-$rpc_port = "8332";
-$rpc_user = "bitcoinrpc";
-$rpc_pass = "Cp68nBkCAADKkskaKSskaDKdmSYLtLJ";
+$rpc_port = "4647";
+$rpc_user = "tremendouscoinrpc";
+$rpc_pass = "password";
 
-$fullname = "Bitcoin"; //Website Title (Do Not include 'wallet')
-$short = "BTC"; //Coin Short (BTC)
-$blockchain_url = "http://blockchain.info/tx/"; //Blockchain Url
+$fullname = "Tremendouscoin"; //Website Title (Do Not include 'wallet')
+$short = "TUSC"; //Coin Short (BTC)
+$blockchain_url = "http://tremendouscoin.info/"; //Blockchain Url
 $support = "support@yourwebsite.com"; //Your support eMail
 $hide_ids = array(1); //Hide account from admin dashboard
 $donation_address = "13jy6rHB7HMgQBoYxQQXSM7TFTZZ6CDAAZ"; //Donation Address
 
-$reserve = "0"; //This fee acts as a reserve. The users balance will display as the balance in the daemon minus the reserve. We don't reccomend setting this more than the Fee the daemon charges.
+$reserve = "0.1"; //This fee acts as a reserve. The users balance will display as the balance in the daemon minus the reserve. We don't reccomend setting this more than the Fee the daemon charges.
 
 if(isSet($_GET['lang']))
 {
